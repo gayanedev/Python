@@ -8,16 +8,18 @@ def fib_iter(n):
 
     if n_terms < 0:
         return "Input must be a positive integer"
+    elif n_terms == 0:
+        return f'The sum of {n} terms are {first}'
     else:
         # use while loop to find the sum of the first two terms
         # and proceed with the series by interchanging the variables till number of terms is greater than 0
-        while n_terms > 0:
+        while n_terms != 0:
             term = first + second
-            first, second = second, term
+            first, second = term, first
             # decrement the value of n
             n_terms -= 1
         # return sum
-        return f'The sum of {n} terms are {first}'
+        return f'The sum of {n} terms are {second}'
 
 
 # input number of terms

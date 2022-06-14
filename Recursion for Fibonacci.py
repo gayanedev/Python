@@ -3,8 +3,8 @@ def fib_rec(n_terms):
     """ Recursive function to calculate nth number """
     if n_terms == 0:
         return 0
-    elif n_terms == 1 or n_terms == 2:
-        return 1
+    elif n_terms in (1, 2):
+        return n_terms - 1
     # recursively call the same function
     return fib_rec(n_terms - 1) + fib_rec(n_terms - 2)
 

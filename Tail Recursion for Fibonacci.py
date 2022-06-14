@@ -1,12 +1,10 @@
 """ Tail Recursion solution to find the nth term in Fibonacci sequence """
 def fib_tail_rec(n_terms, first=0, second=1):
     """ Tail recursive function to calculate nth number """
-    if n_terms == 0:
+    if n_terms == 0 or n_terms == 1:
         return first
-    if n_terms == 1:
-        return second
     # recursively call the same function n-1 times and correspondingly change the values of first and second
-    return fib_tail_rec(n_terms - 1, second, first + second)
+    return fib_tail_rec(n_terms - 1, first + second, first)
 
 
 # input number of terms

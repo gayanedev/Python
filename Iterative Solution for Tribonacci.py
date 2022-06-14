@@ -12,7 +12,7 @@ def trib_iter(n):
     else:
         # use while loop to find the sum of the first three terms
         # and proceed with the series by interchanging the variables till number of terms is greater than 0
-        while n_terms > 0:
+        while n_terms != 0:
             term = first + second + third
             first, second, third = second, third, term
             # decrement the value of n
