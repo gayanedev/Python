@@ -1,11 +1,12 @@
 """ Check whether a number is prime or not """
 def is_prime(num):
     prime_flag = 0
+
     # if given number is greater than 1
     # check prime or no
     if num > 1:
-        # iterate from 2 to n / 2
-        for i in range(2, int(num/2) + 1):
+        # iterate from 2 to n/2
+        for i in range(2, int(num//2) + 1):
             # if num is divisible by any number between 2 and n / 2, it is not prime
             if num % i == 0:
                 prime_flag = 1
@@ -33,6 +34,7 @@ def next_prime(num):
 
         if is_prime(prime):
             found = True
+
     # return prime number
     return prime
 

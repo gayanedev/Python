@@ -4,6 +4,7 @@ def max_min_sum(lst):
     max_num = max(lst)
     # min number
     min_num = min(lst)
+
     # return the sum of the max and min numbers
     return int(max_num + min_num)
 

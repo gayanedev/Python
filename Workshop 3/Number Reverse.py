@@ -2,6 +2,7 @@
 def reverse_number(num):
     # initialize variable with 0
     reverse = 0
+
     # repeat this process until the number becomes 0
     while num != 0:
         # for every iteration get the last digit of the number
@@ -11,6 +12,7 @@ def reverse_number(num):
         reverse = (reverse * 10) + last_digit
         # remove the last digit of the number
         num //= 10
+
     # return the reverse number
     return reverse
 

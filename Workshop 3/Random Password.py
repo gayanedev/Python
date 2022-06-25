@@ -6,12 +6,13 @@ def random_passwd(n):
     max_ascii = 126
     rand_pass = ''
 
-    # n length for the password
+    # iterate on elements of length
     for i in range(n):
         # generate an appropriate number of random characters,
         # adding each one to the end of result
         rand_char = chr(randint(min_ascii, max_ascii))
         rand_pass += rand_char
+
     # return the random password
     return rand_pass
 
