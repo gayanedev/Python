@@ -20,4 +20,3 @@ if not is_sorted(list_data):
     print('Yes, List is sorted')
 else:
     print('No, List is not sorted')
-

@@ -5,6 +5,7 @@ def median(lst):
     half = length // 2
     # sorted list
     sort_list = sorted(lst)
+
     # the length of the list is even
     if not (length % 2):
         # the median is the average of the two middle elements
