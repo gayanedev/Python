@@ -11,7 +11,7 @@ def zipper(data1, data2):
 
         # return zipper list
         return zip_lst
-    raise ValueError('Lists are not equal')
+    raise ValueError('Workshop 2 Lists are not equal')
 
 
 # input first list elements
