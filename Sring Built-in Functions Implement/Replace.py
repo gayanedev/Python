@@ -23,6 +23,6 @@ old_sub = str(input('Enter old substring: '))
 new_sub = str(input('Enter new substring: '))
 
 # input number of times that we want to replace the old substring with the new substring
-count_sub = input('Enter number of times: ') or None
+count_rep = input('Enter count: ') or None
 
-print(replace(string, old_sub, new_sub, count_sub))
+print(replace(string, old_sub, new_sub, count_rep))

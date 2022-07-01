@@ -1,4 +1,4 @@
-""" Join list elements with a separator """
+""" Join list elements by specified separator """
 def join(data, sep):
     string = ''
 

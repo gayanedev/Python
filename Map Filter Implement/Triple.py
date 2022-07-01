@@ -12,6 +12,6 @@ def triple(data):
 
 
 # input list items
-lst = list(map(int, input('Enter list items: ')))
+lst = list(map(int, input('Enter list items: ').split()))
 
 print(f'The triple of each item on the list: {map2(triple, lst)}')

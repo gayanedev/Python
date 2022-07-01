@@ -8,7 +8,7 @@ def remove_all(data, value):
     return data
 
 
-lst = list(map(int, input('Enter list items: ').split()))
-val = int(input('Enter a item value: '))
+lst = list(map(str, input('Enter list items: ').split()))
+val = str(input('Enter a item value: '))
 
 print(f'The list after removing: {remove_all(lst, val)}')

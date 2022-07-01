@@ -8,9 +8,8 @@ def map3(func, data1, data2, data3):
         return lst
     raise ValueError('The lengths of the lists are not equal')
 
-
-""" Calculate sum of three items """
 def sum(data1, data2, data3):
+    """ Calculate sum of three items """
     return data1 + data2 + data3
 
 

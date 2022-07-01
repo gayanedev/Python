@@ -1,4 +1,4 @@
-""" Split a string into a list of strings """
+""" Split the string by specified separator """
 def split(source, sep, count=None):
     res = []
     n_count = 0
@@ -19,11 +19,10 @@ def split(source, sep, count=None):
 # input string
 string = str(input('Enter string: '))
 
-# the string splits at this specified separator
-# input string separator
-string_sep = str(input('Enter substring: '))
+# input separator
+string_sep = str(input('Enter separator: '))
 
-# split the string into maximum number of times
-max_split = input('Enter maxsplit: ') or None
+# input number or times that we want to split
+count_split = input('Enter count: ') or None
 
-print(split(string, string_sep, max_split))
+print(split(string, string_sep, count_split))

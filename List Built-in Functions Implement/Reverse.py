@@ -1,7 +1,7 @@
 """ Reverse a list """
 def reverse(data):
-    i = 0  # initial first item
-    j = len(data) - 1  # initial last item
+    i = 0  # initial first item index
+    j = len(data) - 1  # initial last item index
 
     while i < j:
         data[i], data[j] = data[j], data[i]
@@ -12,6 +12,6 @@ def reverse(data):
 
 
 # input list items
-lst = list(map(int, input('Enter list items: ').split()))
+lst = list(map(str, input('Enter list items: ').split()))
 
 print(f'The reverse list: {reverse(lst)}')

@@ -1,4 +1,4 @@
-""" Map function to calculate the power of every base number """
+""" Map function to calculate the power of each base number """
 def map2(func, data1, data2):
     lst = []
 
@@ -17,11 +17,11 @@ def is_positive(base):
 
 def filter2(func, data1):
     """ Filter negative values from the list """
-    lst = []
+    filter_lst = []
     for i in range(len(data1)):
         if func(data1[i]):
-            lst.append(data1[i])
-    return lst
+            filter_lst.append(data1[i])
+    return filter_lst
 
 
 # input base list items

@@ -12,7 +12,7 @@ def pop(data, i=None):
     return pop_lst, pop_item
 
 
-lst = list(map(int, input('Enter list items: ').split()))
+lst = list(map(str, input('Enter list items: ').split()))
 index = int(input('Enter index: ')) or None
 
 # return the value of the deleted index
