@@ -13,7 +13,6 @@ def add1(a, b):
     if a == 0:
         return b
     else:
-        print(inc(add1(dec(a), b)))
         return inc(add1(dec(a), b))
 
 
